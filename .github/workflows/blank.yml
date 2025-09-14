@@ -17,4 +17,5 @@ jobs:
         run: |
           sudo apt-get install -y build-essential devscripts debhelper 
           dget -u https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/git/1:2.51.0-1ubuntu1/git_2.51.0-1ubuntu1.dsc
+          cd git-2.51.0
           echo "y" | debuild
