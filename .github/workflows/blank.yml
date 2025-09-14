@@ -16,6 +16,5 @@ jobs:
       - name: script
         run: |
           sudo apt-get install -y build-essential devscripts debhelper 
-          git clone --branch applied/ubuntu/devel --depth 1 https://git.launchpad.net/ubuntu/+source/git
-          cd git
+          dget -u https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/git/1:2.51.0-1ubuntu1/git_2.51.0-1ubuntu1.dsc
           echo "y" | debuild
